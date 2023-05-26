@@ -3,6 +3,7 @@
 import sys
 args = sys.argv
 from decimal import Decimal
+import math
 
 # 唐揚げ定食とカレーセットの注文数を取得
 chicken_order_num = int(args[1])
@@ -35,12 +36,16 @@ total_sales = chicken_sales + curry_sales
 
 # total_cost = round(chiken_cost + curry_cost)
 # total_cost = Decimal(chiken_cost + curry_cost).quantize(Decimal('0'))
-# total_cost = Decimal(2000.5).quantize(Decimal('0'), rounding='ROUND_HALF_UP')
-total_cost = round(2000.5)
+decimal_num = Decimal(2000.6).quantize(Decimal('0'), rounding='ROUND_HALF_UP')
+round_num = round(2000.6)
+math_floor = math.floor(2000.6)
+math_ceil = math.ceil(2000.6)
 
+
+print(f'decimal : {decimal_num}, round : {round_num}, floor : {math_floor}')
 # 粗利の計算
-total_profit = total_sales - total_cost
-# print(Decimal(str(f)).quantize(Decimal('0'), rounding=ROUND_HALF_UP))
+# total_profit = total_sales - total_cost
+# # print(Decimal(str(f)).quantize(Decimal('0'), rounding=ROUND_HALF_UP))
 
-print(f'売上高：{total_sales}、原価：{total_cost}、粗利：{total_profit}', end="")
+# print(f'売上高：{total_sales}、原価：{total_cost}、粗利：{total_profit}', end="")
 
