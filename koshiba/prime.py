@@ -11,10 +11,6 @@ if num < 1000 and num != 1:
     for i in range(2, num):
         if num % i == 0:
             num = num / i
-            while num % i == 0:
-                num = num / i
-            else:
-                pass
         else:
             pass
 
