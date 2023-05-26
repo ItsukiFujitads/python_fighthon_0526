@@ -14,4 +14,4 @@ for name in names:
         odd_list.append(name)
 
 
-print(odd_list) 
+print(odd_list, end="") 

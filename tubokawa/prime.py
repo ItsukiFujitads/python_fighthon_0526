@@ -8,6 +8,7 @@ input_num = int(args[1])
 
 if input_num >= 1000:
     print('1000以上は判定できません', end="")
+    
 else:
     # 入力値の平方根を求め、切り上げる処理
     dev_max_num = math.ceil(math.sqrt(input_num))
@@ -24,6 +25,6 @@ else:
             break
 
     if is_prime:
-        print('Prime', end="")
+        print('prime', end="")
     else:
         print('not', end="")
