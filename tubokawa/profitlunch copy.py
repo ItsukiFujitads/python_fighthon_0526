@@ -36,7 +36,7 @@ total_sales = chicken_sales + curry_sales
 # total_cost = round(chiken_cost + curry_cost)
 # total_cost = Decimal(chiken_cost + curry_cost).quantize(Decimal('0'))
 # total_cost = Decimal(2000.5).quantize(Decimal('0'), rounding='ROUND_HALF_UP')
-# total_cost = round(2000.5)
+total_cost = round(2000.5)
 
 # 粗利の計算
 total_profit = total_sales - total_cost
