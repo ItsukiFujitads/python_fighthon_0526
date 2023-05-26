@@ -16,4 +16,4 @@ curry_sales = curry_order_num * curry_fee
 # 一日の売上高の計算
 total_sales = chicken_sales + curry_sales
 
-print(total_sales)
+print(total_sales, end="")
