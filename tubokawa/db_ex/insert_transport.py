@@ -29,18 +29,22 @@ input_via = args[5]
 # 金額の取得
 input_amount = int(args[6])
 
-# データを登録
-data_transport = Transport(
-    date = input_date,
-    seq = input_seq,
-    departure = input_dep_station,
-    arrival = input_arr_station,
-    via = input_via,
-    amount = input_amount
-)
 
-session.add(data_transport)
+try:
+    # データを登録
+    data_transport = Transport(
+        date = input_date,
+        seq = input_seq,
+        departure = input_dep_station,
+        arrival = input_arr_station,
+        via = input_via,
+        amount = input_amount
+    )
 
-session.commit()
+    session.add(data_transport)
 
+    session.commit()
 
+    print('交通費精算テーブルにデータを登録しました')
+except:
+    print('error:交通費精算テーブルにデータを登録出来ませんでした')
