@@ -1,3 +1,7 @@
+"""
+唐揚げ定食とカレーセットの売上高を出力するプログラム
+"""
+
 import sys
 args = sys.argv
 
@@ -16,4 +20,5 @@ curry_sales = curry_order_num * curry_fee
 # 一日の売上高の計算
 total_sales = chicken_sales + curry_sales
 
+# 一日の売り上げだがを出力
 print(total_sales, end="")

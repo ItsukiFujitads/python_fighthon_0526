@@ -19,6 +19,10 @@ dep_station_distance = session.query(Station.kilo).filter_by(
 arr_station_distance = session.query(Station.kilo).filter_by(
     name = arr_station
 ).first().kilo
+# 以下もOK
+# arr_station_distance = session.query(Station).filter_by(
+#     name = arr_station
+# ).first().kilo
 
 #---------------------------------------------
 

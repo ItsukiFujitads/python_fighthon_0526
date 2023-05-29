@@ -13,7 +13,7 @@ DATABASE ="mysql+pymysql://{user}:{password}@{host}/{database}?charset=utf8".for
 ENGINE = create_engine(
     DATABASE,
     encoding = "utf-8",
-    echo=True
+    echo=False
 )
 
 #Sessionの作成
