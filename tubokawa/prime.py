@@ -1,11 +1,17 @@
+"""
+入力値が素数か判定するプログラム
+"""
+
+
 # モジュールをインポート
 import sys
 args = sys.argv
 import math
 
-
+# 入力値を取得
 input_num = int(args[1])
 
+# 1000以上ではないかの判定
 if input_num >= 1000:
     print('1000以上は判定できません', end="")
     
@@ -24,6 +30,8 @@ else:
             is_prime = False
             break
 
+    # 素数ならばprimeと出力
+    # 素数でないならnotと出力
     if is_prime:
         print('prime', end="")
     else:

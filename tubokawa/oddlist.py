@@ -1,3 +1,9 @@
+"""
+配列から奇数の要素を抽出する処理
+"""
+
+
+# 名前を配列に格納
 names = ["Kurita", "Tanaka", "Kaneda", "Noda", "Koyama",
               "Adachi", "Kuriyama", "Ohyama", "Kishida"]
 
@@ -13,5 +19,5 @@ for name in names:
         # 奇数の時の処理
         odd_list.append(name)
 
-
 print(odd_list, end="") 
+
