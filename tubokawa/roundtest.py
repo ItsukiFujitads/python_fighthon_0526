@@ -6,8 +6,8 @@ from decimal import Decimal
 import math
 
 # 唐揚げ定食とカレーセットの注文数を取得
-chicken_order_num = int(args[1])
-curry_order_num = int(args[2])
+chicken_order_num = 20
+curry_order_num = 20
 
 # 唐揚げ定食とカレーセットの値段を設定
 chicken_fee = 760
@@ -36,8 +36,8 @@ total_sales = chicken_sales + curry_sales
 
 # total_cost = round(chiken_cost + curry_cost)
 # total_cost = Decimal(chiken_cost + curry_cost).quantize(Decimal('0'))
-decimal_num = Decimal(2000.6).quantize(Decimal('0'), rounding='ROUND_HALF_UP')
-round_num = round(2000.6)
+decimal_num = Decimal(2000.5).quantize(Decimal('0'), rounding='ROUND_HALF_UP')
+round_num = round(2000.5)
 math_floor = math.floor(2000.6)
 math_ceil = math.ceil(2000.6)
 
