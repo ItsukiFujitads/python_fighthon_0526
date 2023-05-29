@@ -1,0 +1,3 @@
+https://portal.int.mynavi.jp/cgi-bin/login_index.cgi?
+http://inet-cms.int.mynavi.jp/system/
+https://techis.jp/column/python-qr/
