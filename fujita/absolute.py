@@ -5,4 +5,4 @@ import sys
 num=int(sys.argv[1])
 
 #整数と絶対値を出力
-print(f'{num} {abs(num)}')
+print(f'{num} {abs(num)}',end='')
