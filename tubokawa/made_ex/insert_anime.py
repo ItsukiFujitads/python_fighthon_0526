@@ -1,3 +1,9 @@
+"""
+CSVファイルを読み込み、
+animeテーブルにデータを登録するプログラム
+"""
+
+
 import csv
 import datetime
 from database import session
@@ -28,6 +34,7 @@ with open('anime_data.csv', 'r', encoding="utf-8-sig") as af:
             eval_num = eval_num,
         )
 
+        # データを追加
         session.add(data_anime)
 
         session.commit()
@@ -35,4 +42,3 @@ with open('anime_data.csv', 'r', encoding="utf-8-sig") as af:
 
     print('アニメを登録しました')
 
-    # print(f'名前:{name}, 放送日:{date}, 評価:{rate}')
